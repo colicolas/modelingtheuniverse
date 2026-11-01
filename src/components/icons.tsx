@@ -1,0 +1,9 @@
+import type { CSSProperties } from 'react';
+export function Arrow({ diagonal = false }: { diagonal?: boolean }) { return <span aria-hidden="true">{diagonal ? '↗' : '→'}</span>; }
+export function Mark({ small = false }: { small?: boolean }) { return <svg width={small ? 24 : 32} height={small ? 24 : 32} viewBox="0 0 40 40" fill="none" aria-hidden="true"><ellipse cx="20" cy="20" rx="17" ry="7" transform="rotate(-45 20 20)" stroke="currentColor"/><ellipse cx="20" cy="20" rx="17" ry="7" transform="rotate(45 20 20)" stroke="currentColor"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg>; }
+export function Universe() {
+ return <div className="universe" aria-label="Conceptual diagram: the self extends through language, connection, and the world" role="img"><div className="universe-grid"/><div className="orbit orbit-one"/><div className="orbit orbit-two"/><div className="orbit orbit-three"/><div className="orbit orbit-four"/><div className="core"><span>the self</span><i/></div><span className="star star-one"/><span className="star star-two"/><span className="star star-three"/><span className="orbit-label label-one">language</span><span className="orbit-label label-two">connection</span><span className="orbit-label label-three">the world</span><div className="diagram-caption"><span className="dot"/> THE BOUNDARIES OF A SELF ARE NOT FIXED</div></div>;
+}
+export function ExtensionDiagram() {
+return <div className="extension-visual" aria-label="The self reaches outward through language toward people, knowledge, making, and experience" role="img"><div className="extension-ring ring-a"/><div className="extension-ring ring-b"/><div className="extension-ring ring-c"/><span className="extension-self">self</span>{['people','knowledge','making','experience'].map((x,i)=><span key={x} className="extension-node" style={{'--i':i} as CSSProperties}>{x}</span>)}<span className="extension-key">language makes a bridge</span></div>;
+}
