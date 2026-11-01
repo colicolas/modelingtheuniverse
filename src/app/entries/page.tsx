@@ -11,7 +11,7 @@ export default function IndexPage() {
   return <main id="main" className="page-width full-index">
     <header><p className="index-kicker">Modeling the universe</p>
     <h1>Index of terms</h1>
-    <p className="index-description">Explore the ideas behind the model. Choose a term to learn more.</p></header>
+    <p className="index-description">Follow the connections between ideas, or browse the list. Every point is a way into the model.</p></header>
     <EntryIndex entries={getEntries()}/>
     
   </main>;
