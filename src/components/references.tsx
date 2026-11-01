@@ -1,7 +1,7 @@
 const references = [
  {id:'epicurus', text:<>Epicurus. (n.d.). <cite>Letter to Menoeceus</cite> (R. D. Hicks, Trans.). The Internet Classics Archive.</>, url:'https://classics.mit.edu/Epicurus/menoec.html'},
  {id:'horace-1',text:<>Horace. (n.d.). <cite>Satire 1.1</cite> (A. S. Kline, Trans.; J. Lynch, Ed.). Jack Lynch.</>,url:'https://jacklynch.net/Texts/horacesatire11.html'},
- {id:'horace-4',text:<>Horace. (n.d.). <cite>Satires 1.4.</cite> Lectito.</>,url:'https://lectito.app/horace/satires-1/1-4/'},
+ {id:'horace-4',text:<>Horace. (n.d.). <cite>Satires, Book I: Satire IV</cite> (A. S. Kline, Trans.). Poetry in Translation.</>,url:'https://www.poetryintranslation.com/PITBR/Latin/HoraceSatiresBkISatIV.php'},
  {id:'iasp',text:<>International Association for the Study of Pain. (2020, July 16). <cite>IASP announces revised definition of pain.</cite></>,url:'https://www.iasp-pain.org/publications/iasp-news/iasp-announces-revised-definition-of-pain/'},
  {id:'krug',text:<>Krug, E. G., Dahlberg, L. L., Mercy, J. A., Zwi, A. B., &amp; Lozano, R. (Eds.). (2002). <cite>World report on violence and health.</cite> World Health Organization.</>,url:'https://www.who.int/publications/i/item/9241545615'},
  {id:'odoherty',text:<>O’Doherty, J. P. (2011). Reward predictions and computations. In J. A. Gottfried (Ed.), <cite>Neurobiology of sensation and reward</cite> (Chapter 14). CRC Press.</>,url:'https://www.ncbi.nlm.nih.gov/books/NBK92783/'},

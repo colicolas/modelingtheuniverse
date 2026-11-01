@@ -891,3 +891,23 @@ to {
 .term-link:hover .term-name { text-decoration:underline; text-underline-offset:5px; text-decoration-thickness:1px }
 .entry-article section>p+p { margin-top:22px }
 @media(max-width:480px) { .term-link { gap:12px; grid-template-columns:minmax(0,1fr) 16px } .term-name { font-size:21px } .term-category { display:none } }
+
+.entry-passage + .entry-passage { margin-top:22px }
+.education-tasks { list-style:decimal; padding-left:28px; margin:26px 0 32px }
+.education-tasks li { padding-left:8px; margin-bottom:25px; color:var(--purple) }
+.education-tasks li::marker { font:20px Georgia,serif }
+.education-tasks h3 { font:normal 22px/1.4 Georgia,serif; color:var(--text); margin-bottom:8px }
+.education-path { opacity:.3; transition:opacity .5s }
+.education-path path { stroke:var(--purple); stroke-width:2 }
+.education-path circle { fill:var(--purple) }
+.education-path.active { opacity:1 }
+.education-path.active path { stroke-dasharray:1; animation:draw-curve .8s ease both }
+.communication-link { opacity:.15; transition:opacity .6s }
+.communication-link path { stroke:var(--purple); stroke-width:2; stroke-dasharray:1; stroke-dashoffset:1; transition:stroke-dashoffset .8s ease }
+.communication-link.shared { opacity:1 }
+.communication-link.shared path { stroke-dashoffset:0 }
+@media(prefers-reduced-motion:reduce) { .education-path,.communication-link,.communication-link path { animation:none; transition:none } }
+
+.paper-introduction { margin-top:36px }
+.paper-introduction p { font:17px/1.9 Georgia,'Times New Roman',serif; color:#47424c; margin-bottom:20px }
+@media(max-width:760px) { .paper-introduction p { font-size:16px; line-height:1.85 } }

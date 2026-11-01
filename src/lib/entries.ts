@@ -6,8 +6,7 @@ export type Entry = {
   category: 'Inner life' | 'Relationships' | 'Society' | 'Expression';
   summary: string;
   tags: string[];
-  source: string;
-  sections: { heading: string; body: string }[];
+  sections: { heading: string; body: string; items?: { title: string; body: string }[] }[];
   question: string;
   related: string[];
 };
