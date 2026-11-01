@@ -26,3 +26,41 @@ export function CommunicationBridge() {
  const [shared,setShared]=useState(false); const id=useId();
  return <figure className="model-figure"><div className="graph-options" role="group" aria-label="Explore communication"><button type="button" aria-pressed={!shared} onClick={()=>setShared(false)}>An unspoken feeling</button><button type="button" aria-pressed={shared} onClick={()=>setShared(true)}>Give it a form</button></div><svg viewBox="0 0 660 180" role="img" aria-labelledby={id}><title id={id}>{shared?'Words, art, or movement give another person something to respond to.':'An internal feeling has not yet been shared.'}</title><circle className="self-core" cx="100" cy="80" r="35"/><text x="100" y="85" textAnchor="middle">self</text><g className={`communication-link ${shared?'shared':''}`}><path d="M 140 80 L 520 80" pathLength="1"/><text x="330" y="60" textAnchor="middle">words · art · movement</text></g><circle className="self-core" cx="560" cy="80" r="35"/><text x="560" y="85" textAnchor="middle">other</text><text x="330" y="155" textAnchor="middle">{shared?'Something to encounter, interpret, and respond to':'What is felt is not yet shared knowledge'}</text></svg><figcaption><span aria-live="polite">{shared?'Expression opens a possibility for understanding. Listening helps it go somewhere.':'Another person cannot simply guess an inner experience.'}</span></figcaption></figure>;
 }
+
+export function ActionConsequenceNetwork() {
+ const [choice, setChoice] = useState(0);
+ const [stage, setStage] = useState(0);
+ const id = useId();
+ const paths = [
+  { action: ['Ask for help'], immediate: ['Receive support'], later: ['More willing', 'to ask again'], stages: ['A person considers asking for help with an uncertain task.', 'If asking brings support, the person encounters a useful consequence.', 'That experience may make asking for help more likely in another situation.', 'The outcome can revise the expectation that asking will help. Another encounter may turn out differently.'] },
+  { action: ['Avoid the task'], immediate: ['Immediate relief'], later: ['The problem', 'remains'], stages: ['A person considers avoiding the task.', 'Avoidance may remove the immediate anxiety.', 'The task can remain unresolved even though avoiding it brought relief.', 'Immediate relief may reinforce avoidance despite the later cost. Learning what to repeat and evaluating its value can diverge.'] },
+  { action: ['Pressure someone'], immediate: ['Gain compliance'], later: ['Fear or', 'damaged trust'], stages: ['A person considers pressuring someone else to act.', 'If pressure produces compliance, the person may obtain the immediate result they wanted.', 'The other person may carry fear or lose trust. The initial result leaves these consequences out.', 'Compliance may reinforce the use of pressure. A fuller calculation must also include the other person’s suffering and the later consequences.'] },
+ ];
+ const selected = paths[choice];
+ const node = (x: number, y: number, lines: string[], active: boolean) => <g className={`association-node ${active ? 'active' : ''}`}><rect x={x-65} y={y-30} width="130" height="60" rx="5"/><text x={x} y={y-(lines.length-1)*8+4} textAnchor="middle">{lines.map((line,i)=><tspan key={line} x={x} dy={i===0?0:16}>{line}</tspan>)}</text></g>;
+ return <figure className="model-figure association-figure">
+  <div className="graph-options" role="group" aria-label="Choose an action to follow">{paths.map((path,i)=><button type="button" key={path.action[0]} aria-pressed={choice===i} onClick={()=>{setChoice(i);setStage(0);}}>{path.action[0]}</button>)}</div>
+  <div className="association-scroll" role="region" aria-label="Action and consequence diagram, scroll horizontally on smaller screens" tabIndex={0}>
+   <svg viewBox="0 0 730 415" role="img" aria-labelledby={`${id}-title ${id}-description`}>
+    <title id={`${id}-title`}>A network of possible action–consequence associations</title>
+    <desc id={`${id}-description`}>{selected.stages[stage]} The diagram shows three possible paths from uncertainty through an action, an immediate outcome, and a later consequence. These are hypothetical outcomes.</desc>
+    <defs><marker id={`${id}-arrow`} markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M 0 0 L 7 3.5 L 0 7 z"/></marker></defs>
+    <text x="80" y="24" textAnchor="middle">Situation</text><text x="250" y="24" textAnchor="middle">Action</text><text x="435" y="24" textAnchor="middle">Immediate outcome</text><text x="630" y="24" textAnchor="middle">Later consequence</text>
+    {paths.map((path,i)=>{
+     const y=80+i*115;
+     return <g key={path.action[0]}>
+      {[`M 145 195 C 165 195 165 ${y} 180 ${y}`,`M 315 ${y} L 365 ${y}`,`M 500 ${y} L 560 ${y}`].map((d,j)=><path key={d} className={`association-edge ${choice===i&&stage>=j?'active':''}`} d={d} fill="none" markerEnd={`url(#${id}-arrow)`}/>)}
+      {node(250,y,path.action,choice===i)}
+      {node(435,y,path.immediate,choice===i&&stage>=1)}
+      {node(630,y,path.later,choice===i&&stage>=2)}
+     </g>;
+    })}
+    {node(80,195,['Uncertainty','about a task'],true)}
+    <path key={`${choice}-${stage}`} className={`association-feedback ${stage===3?'active':''}`} d={`M 695 ${80+choice*115} C 720 ${80+choice*115} 720 380 690 380 L 80 380 Q 55 380 55 355 L 55 230`} fill="none" markerEnd={`url(#${id}-arrow)`} pathLength="1"/>
+    <text className="association-feedback-label" x="375" y="407" textAnchor="middle">Experience can update what we expect next time</text>
+   </svg>
+  </div>
+  <div className="association-controls"><span>Step {stage+1} of 4</span><button type="button" className="text-link" onClick={()=>setStage((stage+1)%4)}>{stage===3?'Replay this path ↺':['Follow the immediate outcome →','Consider the later consequence →','Update the expectation →'][stage]}</button></div>
+  <figcaption><span aria-live="polite">{selected.stages[stage]}</span><small>A conceptual network of learned expectations. Outcomes are hypothetical, and the nodes represent experiences rather than individual neurons.</small></figcaption>
+ </figure>;
+}

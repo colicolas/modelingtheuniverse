@@ -388,5 +388,58 @@
       "relationships",
       "illness-and-pain"
     ]
+  },
+  {
+    "slug": "the-stranger",
+    "title": "Existentialism & The Stranger",
+    "category": "Inner life",
+    "summary": "If free will means decision-making according to some system, what happens when Meursault appears to have no system, or only an extremely faint hedonic calculus?",
+    "tags": [
+      "Albert Camus",
+      "The Stranger",
+      "The Outsider",
+      "Meursault",
+      "existentialism",
+      "absurdism",
+      "free will",
+      "decision-making",
+      "hedonic calculus",
+      "meaning",
+      "consequences"
+    ],
+    "referenceIds": [
+      "camus-stranger",
+      "aho-existentialism",
+      "aronson-camus"
+    ],
+    "sections": [
+      {
+        "heading": "A system for choosing",
+        "body": "Meursault in Albert Camus’s The Stranger raises a problem for this model of behavior. If free will means decision-making according to some system, we must ask whether there is conscious decision-making within Meursault’s framework before asking why he performs a particular action. My theory is that his apparent indifference reflects an absent, or extremely faint, hedonic calculus. Immediate sensation continues to matter, but it rarely develops into a sustained account of what makes one possible life preferable to another. Without that relation between action, consequence, and value, life can appear meaningless.\n\nI use “system” here to mean a way of evaluating alternatives. It need not be a formal calculation. A commitment, an anticipated consequence, or an understanding of what is worth pursuing can give someone a basis for choosing. The question is whether Meursault acts through such a basis, whether it remains unarticulated, or whether circumstances largely carry him from one event to the next."
+      },
+      {
+        "heading": "Existentialism, freedom, and responsibility",
+        "body": "This question belongs within a broader existential problem. If a person’s purpose is not settled in advance, how do their choices give a life direction? Existentialism connects freedom with the task of becoming someone through situated choices and with responsibility for those choices. It does not require that a person be free of every bodily, historical, or social influence (Aho, 2023).\n\nMy proposed definition of free will adds a particular condition: a choice must proceed through some evaluative system to count as consciously directed. This condition is worth examining rather than assuming. Having a system does not establish that someone freely chose it. Conversely, failing to state a reason does not establish that no choice occurred. Meursault is useful because he exposes the gap between acting, evaluating, and being able to explain an action.\n\n“No system, therefore no free will” is consequently a hypothesis to test. If an action were random, that randomness would not by itself make it an exercise of agency. If an action were influenced by nature, that influence would not by itself prove the absence of agency. The relevant question is what role, if any, Meursault’s own evaluation plays in producing it."
+      },
+      {
+        "heading": "Nature and the question of why",
+        "body": "When Marie raises marriage, Meursault is willing to agree without treating it as a decisive personal commitment. When his employer proposes work in Paris, he expresses little desire to change his life. These episodes suggest choices in which alternatives receive little sustained differentiation (Camus, 1942/1946, Part I, ch. 5).\n\nOn the beach, the narration emphasizes heat, glare, and bodily strain around the killing. Meursault then fires four additional shots after the first. The scene places physical experience beside an action whose consequences demand explanation (Camus, 1942/1946, Part I, ch. 6).\n\nThe distinction between a cause and a reason becomes important here. Heat can help describe the conditions under which an action occurred. It does not, on its own, explain what end the person chose or how they evaluated its consequences. Asking why Meursault acted therefore requires us to distinguish an environmental influence from a purpose he consciously pursued. The narration’s emphasis on sensation raises that problem without settling it.\n\nWithin my framework, the question is whether immediate discomfort has displaced a broader evaluation of what follows. An account of his bodily experience cannot substitute for an account of the person killed or the harm caused. Explaining the conditions of an action and assigning responsibility for its consequences remain distinct tasks."
+      },
+      {
+        "heading": "An absent or extremely faint hedonic calculus",
+        "body": "A hedonic calculus connects possible actions to anticipated pleasure, pain, and consequences across time. My claim is not that Meursault experiences no pleasure or pain. It is that these experiences appear weakly organized into a durable hierarchy of purposes. A present preference may move him without becoming a reason to construct a different future.\n\nThis distinction gives the theory two possible forms. In the stronger version, Meursault lacks a meaningful evaluative system, leaving action largely to circumstance. In the weaker version, he has a system, but its horizon is narrow and the differences it assigns to long-term alternatives are extremely faint. The second reading allows bodily preference and apparent indifference to coexist.\n\nThis also tests the account of self-extension. Knowledge, influence, love, and travel become forms of extension when a person gives them value and pursues them. If the difference between these possible futures carries little weight, the question “How do I want to extend myself?” loses its directing force. Under this interpretation, meaninglessness emerges when felt experiences fail to organize into a sustained answer to what is worth doing."
+      },
+      {
+        "heading": "Absurdism and the limits of the theory",
+        "body": "This interpretation intersects with absurdism, but an absent hedonic calculus is my proposed explanation, not Camus’s definition of the absurd. Camus rejected the existentialist label. His account of absurdity concerns the confrontation between the human demand for meaning and a world that provides no final answer to that demand. Existential questions and Camus’s absurdism overlap without being interchangeable (Aronson, 2021).\n\nThe ending complicates any reading of Meursault as simply unconscious or without value. He recognizes the world’s indifference and affirms that he has been happy and remains so (Camus, 1942/1946, Part II, ch. 5). His relation to existence becomes something he can acknowledge.\n\nFor this model, that ending raises a further possibility. Meaning may depend less on a detailed calculation of future rewards than on consciously taking a position toward one’s life. The absence of a given purpose need not eliminate the capacity to value living. The central question remains whether Meursault lacks an evaluative framework, has one that is extremely faint, or becomes more conscious of his relation to the world over the course of the novel. Each possibility changes what we mean when we ask why he acts."
+      }
+    ],
+    "question": "When asking why someone acted, are we identifying a cause, an anticipated consequence, or a value they consciously chose?",
+    "related": [
+      "learning-and-association",
+      "illness-and-pain",
+      "violence",
+      "religion"
+    ]
   }
 ]

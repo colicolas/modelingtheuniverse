@@ -1,4 +1,11 @@
 const references = [
+ {id:'association-cortex',text:<>Wright, A. (2026). Higher cortical functions: Association and executive processing. <cite>Neuroscience Online.</cite> McGovern Medical School, UTHealth Houston.</>,url:'https://nba.uth.tmc.edu/neuroscience/m/s4/chapter09.html'},
+ {id:'teen-brain',text:<>National Institute of Mental Health. (2023). <cite>The teen brain: 7 things to know.</cite> National Institutes of Health.</>,url:'https://www.nimh.nih.gov/health/publications/the-teen-brain-7-things-to-know'},
+ {id:'blair',text:<>Blair, R. J. R. (2008). The amygdala and ventromedial prefrontal cortex: Functional contributions and dysfunction in psychopathy. <cite>Philosophical Transactions of the Royal Society B: Biological Sciences, 363</cite>(1503), 2557–2565.</>,url:'https://pmc.ncbi.nlm.nih.gov/articles/PMC2606709/'},
+ {id:'drayton',text:<>Drayton, L. A., Santos, L. R., &amp; Baskin-Sommers, A. (2018). Psychopaths fail to automatically take the perspective of others. <cite>Proceedings of the National Academy of Sciences, 115</cite>(13), 3302–3307.</>,url:'https://pmc.ncbi.nlm.nih.gov/articles/PMC5879707/'},
+ {id:'camus-stranger',text:<>Camus, A. (1946). <cite>The stranger</cite> (S. Gilbert, Trans.). Alfred A. Knopf. (Original work published 1942).</>,url:'https://dhspriory.org/kenny/PhilTexts/Camus/The%20Stranger.pdf'},
+ {id:'aho-existentialism',text:<>Aho, K. (2023). Existentialism. <cite>The Stanford Encyclopedia of Philosophy.</cite></>,url:'https://plato.stanford.edu/entries/existentialism/'},
+ {id:'aronson-camus',text:<>Aronson, R. (2021). Albert Camus. <cite>The Stanford Encyclopedia of Philosophy.</cite></>,url:'https://plato.stanford.edu/entries/camus/'},
  {id:'epicurus', text:<>Epicurus. (n.d.). <cite>Letter to Menoeceus</cite> (R. D. Hicks, Trans.). The Internet Classics Archive.</>, url:'https://classics.mit.edu/Epicurus/menoec.html'},
  {id:'horace-1',text:<>Horace. (n.d.). <cite>Satire 1.1</cite> (A. S. Kline, Trans.; J. Lynch, Ed.). Jack Lynch.</>,url:'https://jacklynch.net/Texts/horacesatire11.html'},
  {id:'horace-4',text:<>Horace. (n.d.). <cite>Satires, Book I: Satire IV</cite> (A. S. Kline, Trans.). Poetry in Translation.</>,url:'https://www.poetryintranslation.com/PITBR/Latin/HoraceSatiresBkISatIV.php'},
