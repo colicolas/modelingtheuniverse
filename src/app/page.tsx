@@ -171,8 +171,9 @@ export default function Home() {
         <p>I hope you understand what I am saying, or at least trying to say, so we can engage in a conversation about it, including why it is wrong or how some part of the argument could be improved.</p>
         <p><Link href="/entries" className="text-link">Read the applications of the model →</Link></p>
       </CollapsibleSection>
+      <p className="original-draft-link">original draft pdf: <a href="/original-draft.pdf" className="text-link" target="_blank" rel="noreferrer">link</a></p>
       <CollapsibleSection id="origins" className="references" heading={<> References </>}>
-<References only={['epicurus','horace-1','horace-4','iasp','krug','odoherty','purves','scarry','spielman','association-cortex','teen-brain','blair','drayton']}/><a href="/original-draft.pdf" className="text-link" target="_blank" rel="noreferrer">Download the essay (PDF) ↗</a></CollapsibleSection>
+<References only={['epicurus','horace-1','horace-4','iasp','krug','odoherty','purves','scarry','spielman','association-cortex','teen-brain','blair','drayton']}/></CollapsibleSection>
     </article>
   </main>;
 }

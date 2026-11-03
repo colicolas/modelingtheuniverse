@@ -1073,3 +1073,6 @@ to {
  .map-reading.has-selection { grid-template-columns:1fr; gap:18px }
  .map-related { border-left:0; border-top:1px solid var(--line); padding:17px 0 0 }
 }
+
+.original-draft-link { margin-top:32px; font:14px/1.8 Georgia,serif }
+.original-draft-link .text-link { font:inherit; text-decoration:underline; text-underline-offset:3px }
