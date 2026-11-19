@@ -1076,3 +1076,54 @@ to {
 
 .original-draft-link { margin-top:32px; font:14px/1.8 Georgia,serif }
 .original-draft-link .text-link { font:inherit; text-decoration:underline; text-underline-offset:3px }
+
+.paper mark {
+  background: #eee3f5;
+  color: inherit;
+  padding-inline: .12em;
+}
+.latest-version {
+  margin: 12px auto 0;
+  max-width: 46ch;
+  font: 12px/1.7 Arial, sans-serif;
+  color: var(--muted);
+}
+.latest-version a {
+  color: var(--purple);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.version-timeline {
+  list-style: none;
+  margin: 38px auto 0;
+  padding: 0 0 0 24px;
+  border-left: 1px solid var(--line);
+  max-width: 590px;
+}
+.version-timeline li {
+  position: relative;
+  padding-bottom: 28px;
+}
+.version-timeline li:last-child { padding-bottom: 0 }
+.version-timeline li::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -28px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--purple);
+}
+.version-timeline time {
+  font: 12px/1.6 Arial, sans-serif;
+  color: var(--muted);
+}
+.version-timeline h2 {
+  margin: 5px 0;
+  font: normal 23px/1.35 Georgia, serif;
+}
+.version-timeline p {
+  margin-bottom: 5px;
+  font: 16px/1.7 Georgia, serif;
+}
